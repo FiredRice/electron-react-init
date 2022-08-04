@@ -1,0 +1,53 @@
+
+@fix-bug-variables: 0;
+
+.generate-margin(10);
+
+.generate-margin(@n, @i: 1) when (@i =< @n) {
+  .mg-@{i}@{fix-bug-variables} {
+    margin: (@i *10px);
+  }
+
+  .mg-tb-@{i}@{fix-bug-variables} {
+    margin: (@i *10px) 0;
+  }
+  .mg-l-@{i}@{fix-bug-variables} {
+    margin-left: (@i *10px);
+  }
+  .mg-r-@{i}@{fix-bug-variables} {
+    margin-right: (@i *10px);
+  }
+  .mg-t-@{i}@{fix-bug-variables} {
+    margin-top: (@i *10px);
+  }
+  .mg-b-@{i}@{fix-bug-variables} {
+    margin-bottom: (@i *10px);
+  }
+  .generate-margin(@n, (@i + 1));
+}
+
+.generate-padding(10);
+
+.generate-padding(@n, @i: 1) when (@i =< @n) {
+  .pd-@{i}@{fix-bug-variables} {
+    padding: (@i *10px);
+  }
+
+  .pd-tb-@{i}@{fix-bug-variables} {
+    padding: (@i *10px) 0;
+  }
+  .pd-l-@{i}@{fix-bug-variables} {
+    padding-left: (@i *10px);
+  }
+  .pd-r-@{i}@{fix-bug-variables} {
+    padding-right: (@i *10px);
+  }
+  .pd-t-@{i}@{fix-bug-variables} {
+    padding-top: (@i *10px);
+  }
+  .pd-b-@{i}@{fix-bug-variables} {
+    padding-bottom: (@i *10px);
+  }
+  .generate-padding(@n, (@i + 1));
+}
+

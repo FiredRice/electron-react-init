@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "module": "commonjs",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "declaration": true,
+        "declarationMap": true,
+        "jsx": "react-jsx",
+        "strict": true,
+        "pretty": true,
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "outDir": "release/app/dist"
+    },
+    "exclude": [
+        "test",
+        "release/build",
+        "release/app/dist",
+        ".erb/dll"
+    ]
+}
